@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Game App</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./index.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+     
+  </head>
+  <body style="background-color: grey;">
+    
+   <script src="./src/index.pack.js"></script>
+   
+   
+   <div id="root"></div>
+    <div>
+        <h1 id="headname">Type it!</h1>
+        <p style="text-align: center;">The game will automatically start in 5 seconds.</p>
+        <p style="color: white; text-align: center;" id="headline">Type the given word in
+             <span style="color: white; text-align: center; font-weight: bold;" id="seconds">5</span> Seconds:</p>
+        <div id="container0">
+        <div id="word11"><h3 id="wordin"></h3></div>
+        <div id="word22"><h3 id="wordin1"></h3></div>
+        <div id="word33"><h3 id="wordin2"></h3></div>
+       </div>
+       
+
+       <div id="container2">
+        <div id="box1">
+            <h4 id="allbox"></h4>
+            <h3 id="dis1" style="color: white;"></h3>
+        </div>
+        <div id="box2">
+            <h4 id="allbox"></h4>
+            <h3 id="dis2" style="color: white;"></h3>
+        </div>
+        <div id="box3">
+            <h4 id="allbox"></h4>
+            <h3 id="dis3" style="color: white;"></h3>
+        </div>
+        
+        </div>
+
+
+
+       <div id="container1">
+        <div id="score">
+            <h4 id="allbox">Score</h4>
+            <h3 id="scorein" style="color: white;">0</h3>
+        </div>
+        <div id="level">
+            <h4 id="allbox">Level</h4>
+            <h3 id="lev" style="color: white;">0</h3>
+        </div>
+        <div id="etc">
+            <h4 id="allbox">Time</h4>
+            <h3 id="timein" style="color: white;">0</h3>
+        </div>
+        
+        </div>
+        <h4 id="message"></h4>
+        <!--<div id="outer">
+            <div class="inner"><button type="submit" class="msgBtn" onClick="easy()" >Save</button></div>
+            <div class="inner"><button type="submit" class="msgBtn2" onClick="return false;">Publish</button></div>
+            <div class="inner"><button class="msgBtnBack">Back</button></div>
+          </div>-->
+ 
+  <button onClick="window.location.reload();" class="btn btn-warning" id="stbtn">START GAME</button>
+    <div class="container">
+      <div class="row text-center">
+          <div class="col-md-6 offset-md-3">
+              <h1 class="text-center" id="keyCodeValue"></h1>
+              <div class="key" id="keyBlock">
+                  <div class="card-block">
+                      <blockquote class="card-blockquote">
+                          
+                          <h3 id="buttonPressed"></h3>
+                      </blockquote>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <input type="text" id="word-input" class="form__input" autofocus>
+  <p id="j"></p>
+  
+    <script src="function.js"></script> 
+    <script src="check.js"></script>
+  
+  <script src="displayfunction.js"></script>
+  </body>
+</html>
